@@ -30,8 +30,9 @@ nav {
     font-weight: bold;
 }
 
-.logo img {
+nav.logo img {
     margin-right: 40px;
+    width: auto;
 }
 
 nav ul {
