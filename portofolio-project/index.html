@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://via.placeholder.com/40" alt="Logo"> <span>My Website</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Our Profile</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome-banner">
+            <h1 id="welcome-text">Hi, Welcome To Website</h1>
+            <p>Ini adalah website latihan pertama.</p>
+            <div class="banner-image-placeholder">1366x576</div>
+        </section>
+
+        <section class="headquarters">
+            <h2>Our Headquarter</h2>
+            <div class="city-container">
+                <div class="city">
+                    <div class="city-circle"></div>
+                    <p>Jakarta</p>
+                </div>
+                <div class="city">
+                    <div class="city-circle"></div>
+                    <p>Bandung</p>
+                </div>
+                <div class="city">
+                    <div class="city-circle"></div>
+                    <p>Surabaya</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="message-us" class="message-us">
+            <div class="form-container">
+                <h2>Message Us</h2>
+                <form id="message-form">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama">
+
+                    <label for="tgl-lahir">Tanggal Lahir:</label>
+                    <input type="date" id="tgl-lahir" name="tgl-lahir">
+
+                    <label>Jenis Kelamin:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-laki">
+                        <label for="laki-laki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan">
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" name="pesan" rows="4"></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="output-container">
+                <p><strong>Current time:</strong> <span id="current-time"></span></p>
+                <p><strong>Nama:</strong> <span id="output-nama"></span></p>
+                <p><strong>Tanggal Lahir:</strong> <span id="output-tgl-lahir"></span></p>
+                <p><strong>Jenis Kelamin:</strong> <span id="output-jenis-kelamin"></span></p>
+                <p><strong>Pesan:</strong> <span id="output-pesan"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created By [Nama Anda]</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
