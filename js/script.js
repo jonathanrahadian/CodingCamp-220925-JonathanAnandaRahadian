@@ -1,7 +1,7 @@
 // Menunggu seluruh konten halaman dimuat sebelum menjalankan script
 document.addEventListener('DOMContentLoaded', function() {
 
-    // --- Fitur 1: Selamat Datang ---
+    // --- Fitur 1: Sapaan Selamat Datang ---
     const userName = prompt("Please enter your name:", "");
     if (userName) {
         document.getElementById('welcome-text').innerText = `Hi ${userName}, Welcome To The Website`;
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- Fitur 2: Validasi dan Tampilan Form ---
     const messageForm = document.getElementById('message-form');
 
-    // Add event listener buat event 'submit' pada form
+    // Tambahkan event listener untuk event 'submit' pada form
     messageForm.addEventListener('submit', function(event) {
         // Mencegah form dari perilaku default-nya (reload halaman)
         event.preventDefault();
